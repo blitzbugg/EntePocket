@@ -1,50 +1,330 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
 
-## Get started
+<img src="./assets/images/entepocket_logo.png" width="120" alt="EntePocket Logo"/>
 
-1. Install dependencies
+# EntePocket
 
-   ```bash
-   npm install
-   ```
+### A calm and simple household expense notebook for Indian families.
 
-2. Start the app
+<p align="center">
+  <img src="https://img.shields.io/badge/Expo-React%20Native-000000?style=for-the-badge&logo=expo" />
+  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+</p>
 
-   ```bash
-   npx expo start
-   ```
+</div>
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# 🌿 The Problem
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Indian households still manage daily expenses using:
 
-## Get a fresh project
+- notebooks,
+- diaries,
+- WhatsApp messages,
+- Excel sheets,
+- or memory.
 
-When you're ready, run:
+UPI apps already track online payments.
+
+But what about:
+
+- milk 🥛
+- vegetables 🥬
+- auto rides 🛺
+- groceries 🛍️
+- helper payments 👨‍🔧
+- tea shop expenses ☕
+- daily cash spending 💸
+
+Those expenses quietly disappear.
+
+And at the end of the month:
+> “Cash evide poyi?” 😭
+
+---
+
+# ✨ What is EntePocket?
+
+EntePocket transforms the traditional household notebook into a clean and collaborative mobile experience.
+
+Built specifically for:
+- Indian middle-class families
+- Parents
+- Non-technical users
+- Shared household expense tracking
+
+The goal is simple:
+
+> Make expense tracking feel natural, stress-free, and familiar.
+
+---
+
+# 🧠 Product Philosophy
+
+EntePocket is intentionally **NOT**:
+
+❌ A fintech super app  
+❌ A crypto dashboard  
+❌ An investment tracker  
+❌ A budgeting analytics platform  
+❌ A banking application  
+
+Instead, it is:
+> “A digital household notebook.”
+
+Simple.
+Calm.
+Human.
+
+---
+
+# 📱 Core Features
+
+## 🔐 Phone OTP Login
+- Fast mobile number login
+- No passwords
+- Familiar Indian onboarding flow
+
+---
+
+## 👨‍👩‍👧 Family Collaboration
+Create or join family groups and track expenses together.
+
+Perfect for:
+- Parents
+- Couples
+- Shared households
+- Hostel roommates
+
+---
+
+## 💸 Fast Expense Entry
+Add expenses in seconds.
+
+Includes:
+- Amount
+- Category
+- Payment Type
+- Optional Note
+- Date
+
+Payment types:
+- Cash
+- UPI
+- Card
+
+Cash is the default focus of the app.
+
+---
+
+## 📊 Monthly Overview
+Simple monthly tracking without overwhelming analytics.
+
+Track:
+- Total spent
+- Recent expenses
+- Family activity
+- Household spending flow
+
+---
+
+## 🔔 Recurring Bill Reminders
+Track important bills like:
+- Electricity
+- WiFi
+- Gas
+- EMI
+- Rent
+
+Never miss due dates again.
+
+---
+
+## 📶 Offline First
+No internet?
+No problem.
+
+Expenses can be added offline and synced automatically later.
+
+---
+
+# 🎨 Design Philosophy
+
+EntePocket is designed to feel:
+
+- Calm
+- Spacious
+- Familiar
+- Trustworthy
+- Parent-friendly
+
+Inspired by:
+- Google Pay simplicity
+- WhatsApp usability
+- Traditional Indian household notebooks
+
+---
+
+# 🪴 UI Principles
+
+✅ White-first interface  
+✅ Large readable typography  
+✅ Soft green accents  
+✅ Large touch targets  
+✅ Minimal visual noise  
+✅ Parent-friendly UX  
+
+---
+
+# 🚫 What We Avoid
+
+- Dark mode
+- Complex charts
+- Fintech aesthetics
+- Crypto-like UI
+- Feature overload
+- Aggressive notifications
+- Confusing financial jargon
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+
+## Backend
+- Supabase (PostgreSQL)
+
+## Authentication
+- Phone OTP Authentication
+- Twilio SMS Provider
+
+## State Management
+- Zustand
+
+## Local Storage
+- SQLite
+- AsyncStorage
+
+## Notifications
+- Firebase Cloud Messaging
+
+---
+
+# 📂 Project Structure
+
+```txt
+app/              → Expo Router routes & layouts
+components/       → Shared UI components
+services/         → API & sync logic
+store/            → Zustand stores
+hooks/            → Custom hooks
+constants/        → Colors, categories, static values
+types/            → TypeScript types
+utils/            → Helpers & Supabase client
+````
+
+---
+
+# 🧾 Expense Categories
+
+Current MVP Categories:
+
+* Groceries
+* Food
+* Transport
+* Bills
+* Medical
+* Education
+* Shopping
+* Other
+
+---
+
+# 🚀 Getting Started
+
+## 1️⃣ Clone Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/blitzbugg/entepocket.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 2️⃣ Install Dependencies
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 3️⃣ Setup Environment Variables
 
-Join our community of developers creating universal apps.
+Create a `.env` file:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```env
+EXPO_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+EXPO_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
+
+---
+
+## 4️⃣ Start Development Server
+
+```bash
+npx expo start
+```
+
+---
+
+# 🔐 Backend Setup
+
+Required services:
+
+* Supabase
+* PostgreSQL
+* Twilio
+* Phone OTP Authentication
+* Row Level Security (RLS)
+
+---
+
+# 📱 Android First
+
+EntePocket is optimized primarily for:
+
+* Android devices
+* Indian users
+* Mid-range smartphones
+* Parent-friendly mobile usage
+
+---
+
+# 🌱 Vision
+
+EntePocket aims to help families build better financial awareness without complexity.
+
+The goal is not financial perfection.
+
+The goal is:
+
+> consistency, clarity, and household discipline.
+
+---
+
+<div align="center">
+
+# ❤️ EntePocket
+
+### “A family notebook in your pocket.”
+
+</div>
