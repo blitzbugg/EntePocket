@@ -1,42 +1,51 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const primaryGreen = '#4CAF50';
+const surfaceWhite = '#FCF9F8';
+const primaryText = '#1C1B1B';
+const alertRed = '#B3261E';
+const surfaceContainer1 = '#F6F3F2';
+const surfaceContainer2 = '#F1EEED';
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    text: primaryText,
+    background: surfaceWhite,
+    tint: primaryGreen,
+    icon: '#6B6867',
+    tabIconDefault: 'rgba(28, 27, 27, 0.5)',
+    tabIconSelected: primaryGreen,
+    primaryGreen,
+    surfaceWhite,
+    primaryText,
+    alertRed,
+    surfaceContainer1,
+    surfaceContainer2,
   },
+  // Since EntePocket does not support Dark Mode, we map the dark palette to the light values.
+  // This guarantees a consistent, calm, parent-friendly light theme under any system configuration.
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    text: primaryText,
+    background: surfaceWhite,
+    tint: primaryGreen,
+    icon: '#6B6867',
+    tabIconDefault: 'rgba(28, 27, 27, 0.5)',
+    tabIconSelected: primaryGreen,
+    primaryGreen,
+    surfaceWhite,
+    primaryText,
+    alertRed,
+    surfaceContainer1,
+    surfaceContainer2,
   },
 };
 
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
+    sans: 'System',
+    serif: 'Georgia',
+    rounded: 'System',
+    mono: 'Courier',
   },
   default: {
     sans: 'normal',
@@ -51,3 +60,4 @@ export const Fonts = Platform.select({
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });
+
